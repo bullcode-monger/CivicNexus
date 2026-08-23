@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Modern Landing Page</title>
+    <style>
+        /* Base Reset & Styling */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: sans-serif; line-height: 1.6; color: #333; background-color: #fcfcfc; }
+        .navbar { display: flex; justify-content: space-between; padding: 20px 40px; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .logo { font-size: 24px; font-weight: 700; color: #2563eb; }
+        .nav-links { list-style: none; display: flex; gap: 20px; }
+        .nav-links a { text-decoration: none; color: #555; }
+        .hero { text-align: center; padding: 100px 20px; background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 100%); }
+        .hero h1 { font-size: 48px; margin-bottom: 20px; }
+        .cta-btn { background-color: #2563eb; color: #fff; padding: 14px 28px; text-decoration: none; border-radius: 6px; border: none; cursor: pointer; }
+        .features { padding: 80px 40px; max-width: 1200px; margin: 0 auto; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: #fff; padding: 30px; border-radius: 8px; border: 1px solid #e2e8f0; }
+        footer { background: #1e293b; color: #fff; text-align: center; padding: 30px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">BrandName</div>
+        <ul class="nav-links">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <h1>Headline</h1>
+        <p>Subtitle describing your product, application, or service.</p>
+        <button class="cta-btn">Get Started</button>
+    </header>
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="grid">
+            <div class="card"><h3>Fast</h3><p>Fast and reliable.</p></div>
+            <div class="card"><h3>Responsive</h3><p>Works on all devices.</p></div>
+            <div class="card"><h3>Customizable</h3><p>Easy to edit.</p></div>
+        </div>
+    </section>
+    <footer><p>&copy; 2026 BrandName. All rights reserved.</p></footer>
+</body>
+</html>
