@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Staff Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <header>
+            <ul>
+                <li>
+                    <img src="assets/icons/Logo.png" alt="CivicNexus Logo" class="logo">
+                    <span>Makhanda Pulse</span>
+                </li>
+            </ul>
+        </header>
+
+        <nav id="sidebar">
+            <ul>
+                <li>
+                    <button id="toggle-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>
+                    </button>
+                </li>
+                <li class="active">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h16<PASSWORD>"/></svg>
+                    <a href="dashboard.html">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li >
+                    <button class="dropdown-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M222-200 80-342l56-56 85 85 170-170 56 57-225 226Zm0-320L80-662l56-56 85 85 170-170 56 57-225 226Zm298 240v-80h360v80H520Zm0-320v-80h360v80H520Z"/></svg>
+                        <span>Todo</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                    </button>
+                    <ul class="sub-menu">
+                        <li><a href="#">Not Started</a></li>
+                        <li><a href="#">In Progress</a></li>
+                        <li><a href="#">Completed</a></li>
+                    </ul>
+                </li>
+                <li >
+                    <a href="notifications.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"/></svg>
+                        <span>Notifications</span>
+                    </a>
+                </li>
+                <li >
+                    <a href="profile.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M367-527q-47-47-47-113t47-113q47-47 113-47t113 47q47 47 47 113t-47 113q-47 47-113 47t-113-47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm296.5-343.5Q560-607 560-640t-23.5-56.5Q513-720 480-720t-56.5 23.5Q400-673 400-640t23.5 56.5Q447-560 480-560t56.5-23.5ZM480-640Zm0 400Z"/></svg>
+                        <span>Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="container">
+                <h2>Dashboard</h2>
+
+                <div class="sub-container">
+                    <p>25</p>
+                    <h3>Open Faults</h3>
+                </div>
+
+                <div class="sub-container">
+                    <p>10</p>
+                    <h3>In Progress Faults</h3>
+                </div>
+
+                <div class="sub-container">
+                    <p>5</p>
+                    <h3>Completed Faults</h3>
+                </div>
+            </div>
+
+            <div class="container">
+                <h3>Recent Activity</h3>
+                <p>#FT-1040 - Issue with water pressure in Building A</p>
+                <p>#FT-1039 - Light fixture replacement in Lobby</p>
+                <p>#FT-1038 - HVAC maintenance in Conference Room</p>
+            </div>
+
+            <div class="container">
+                <h3>Upcoming Events</h3>
+                <p>Team Meeting - 10:00 AM</p>
+                <p>Training Session - 2:00 PM</p>
+            </div>
+
+            <div class="container">
+                <h3>My Tasks</h3>
+                <ul>
+                    <li>Inspect Building B - Due: 2024-06-15</li>
+                    <li>Submit Maintenance Report - Due: 2024-06-16</li>
+                    <li>Follow up on Open Faults - Due: 2024-06-17</li>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>
