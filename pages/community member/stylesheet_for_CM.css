@@ -302,6 +302,8 @@ footer p {
     font-size: 12px;
     opacity: 0.8;
 }
+
+/*Removes the navigation links on small screens */
 @media (max-width: 768px) {
 
     #nav-links {
