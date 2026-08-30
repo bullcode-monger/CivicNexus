@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakhandaPulse/Dashboard..</title>
+    <link rel="stylesheet" href="stylesheet_for_CM.css">
+</head>
+<body>
+<header>
+    <!--Self-made logo -->
+    <div id="logo">
+        <h1 id="Makhanda">Makhanda</h1>
+        <h1 id="Pulse">Pulse</h1>
+    </div>
+
+    <!-- Dashboard nav-->
+    <nav id="nav-links">
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Services</a>
+        <a href="">Ward Notices</a>
+        <a href="">Contact</a>
+    </nav>
+
+    <!--Profile & Logout-->
+    <div id="profile-actions">
+        <a href="">My Profile</a>
+        <a href="">Logout</a>
+    </div>
+</header>
+
+<main>
+    <!-- Section for welcome message and Makhanda's landscape image-->
+    <section class="welcome-banner">
+
+    <div class="welcome-text">
+        <h1>Dashboard</h1>
+        <p>Welcome [USERNAME], here is an overview of your account and ward updates.</p> <!-- Placeholder for username -->
+    </div>
+        
+        <div class="welcome-image">
+        <img src="images\1. Makhanda image.webp" alt="Makhanda landscape" width="400" height="250">
+        </div>
+    </section>
+
+    <!-- Dashboard Grid -->
+    <div class="dashboard-grid">
+
+        <!--Section for My Recent Faults-->
+        <section class="dashboard-card">
+            <div class="card-header">
+                <h2>My Recent Faults</h2>
+                <a href="my_faults.html"><button type="button">View All</button></a>
+            </div>
+            
+            <article>
+                <p><bold>[Ticket #1024]:</bold> Water Supply - Status: Pending</p> <!-- Placeholder -->
+                <a href="">View Details</a>
+            </article>
+            
+            <article>
+                <p><bold>[Ticket #1025]:</bold> Road Damage - Status: Resolved</p> <!-- Placeholder -->
+                <a href="">View Details</a>
+            </article>
+        </section>
+
+        <!-- Section for Report a Fault-->
+        <section class="dashboard-card">
+            <div class="card-header">
+                <h2>Need to Report?</h2>
+            </div>
+            <p>If you notice a new municipal fault, please report it immediately.</p>
+            <button type="button" onclick="window.location.href='report_fault.html'">Report a New Fault</button>
+        </section>
+
+        <!-- Section for personalised Ward Notices -->
+        <section class="dashboard-card">
+            <div class="card-header">
+                <h3>Ward 2 Notices</h3> <!-- Placeholder -->
+                <a href=""><button type="button">View All</button></a>
+            </div>
+            
+            <article>
+                <p><bold>Water Outage:</bold> Scheduled maintenance on Friday.</p> <!-- Placeholder -->
+                <a href="">Read more...</a>
+            </article>
+            
+            <article>
+                <p><bold>Community Meeting:</bold> Saturday at the Hall.</p> <!-- Placeholder -->
+                <a href="">Read more...</a>
+            </article>
+        </section>
+
+        <!-- Section for Latest Announcements -->
+        <section class="dashboard-card">
+            <div class="card-header">
+                <h3>Latest Announcements</h3>
+                <button type="button">View All</button>
+            </div>
+            
+            <article>
+                <p><bold>Budget Review:</bold> Comments open until September.</p> <!-- Placeholder -->
+                <a href="">Read more...</a>
+            </article>
+            
+            <article>
+                <p><bold>Load Shedding:</bold> Stage 2 scheduled for tomorrow.</p> <!-- Placeholder -->
+                <a href="">Read more...</a>
+            </article>
+        </section>
+
+        <!-- Section for Notifications -->
+        <section class="dashboard-card">
+            <div class="card-header">
+                <h3>My Notifications</h3>
+                <button type="button" onclick="window.location.href='notifications.html'">View All</button>
+            </div>
+            
+            <article>
+                <p><bold>Update:</bold> Ticket #1024 has been reviewed.</p> <!-- Placeholder -->
+            </article>
+            
+            <article>
+                <p><bold>Alert:</bold> Your profile details were updated.</p> <!-- Placeholder -->
+            </article>
+            
+            <article>
+                <p><bold>New Notice:</bold> A new Ward 2 notice was published.</p> <!-- Placeholder -->
+            </article>
+        </section>
+
+        <!-- Section for General town info -->
+        <section class="dashboard-card">
+            <div class="card-header">
+                <h3>Grahamstown Weather</h3>
+            </div>
+            <p>Current Weather: [Placeholder], Dam Levels: [Placeholder]</p> <!-- Placeholder -->
+        </section>
+
+    </div> <!--The grid layout ends here -->
+</main>
+
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <a href="">About Us</a>
+            <a href="">Contact</a>
+            <a href="">Help</a>
+            <a href="">Terms and Conditions</a>
+        </nav>
+        <p>&copy; 2026 MakhandaPulse. All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
