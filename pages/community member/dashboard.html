@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MakhandaPulse/Dashboard..</title>
-    <link rel="stylesheet" href="stylesheet_for_CM.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
@@ -38,10 +38,7 @@
         <h1>Dashboard</h1>
         <p>Welcome [USERNAME], here is an overview of your account and ward updates.</p> <!-- Placeholder for username -->
     </div>
-        
-        <div class="welcome-image">
-        <img src="images\1. Makhanda image.webp" alt="Makhanda landscape" width="400" height="250">
-        </div>
+
     </section>
 
     <!-- Dashboard Grid -->
@@ -71,7 +68,7 @@
                 <h2>Need to Report?</h2>
             </div>
             <p>If you notice a new municipal fault, please report it immediately.</p>
-            <button type="button" onclick="window.location.href='report_fault.html'">Report a New Fault</button>
+            <button type="button" id="report-fault-btn">Report a New Fault</button>
         </section>
 
         <!-- Section for personalised Ward Notices -->
@@ -114,7 +111,7 @@
         <section class="dashboard-card">
             <div class="card-header">
                 <h3>My Notifications</h3>
-                <button type="button" onclick="window.location.href='notifications.html'">View All</button>
+                <button type="button" id="view-all-notifications-btn">View All</button>
             </div>
             
             <article>
