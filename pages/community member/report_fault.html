@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Fault | MakhandaPulse</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+<header>
+    <!-- Self made logo-->
+    <div id="logo">
+        <h1 id="Makhanda">Makhanda</h1>
+        <h1 id="Pulse">Pulse</h1>
+    </div>
+
+
+    <!--Navigation links-->
+    <nav>
+        <a href="dashboard.html">Home</a>
+        <a href="">About Us</a>
+        <a href="">Services</a>
+        <a href="">Ward Notices</a>
+        <a href="">Contact</a>
+    </nav>
+
+    <!--Profile and Logout-->
+    <div id="profile-actions">
+        <a href="">My Profile</a>
+        <a href="">Logout</a>
+    </div>
+</header>
+
+<main>
+    <!--Log Issue banner-->
+    <section>
+        <div class="log-issue-banner">
+            <h1>Log an Issue</h1>
+        </div>
+    </section>
+
+<!--Report municipal service form-->
+<section class="report-form-container">
+    <form action="" method="POST" enctype="multipart/form-data">
+            
+    <!--Different municipal fault categories dropdown-->
+    <div class="form-group">
+        <label for="category">1. Select a Category</label>
+            <select id="category" name="category" required>
+                <option value="">-- Select a Category --</option>
+                <option value="water">Water Supply</option>
+                <option value="electricity">Electrical Faults</option>
+                <option value="roads">Road Damage</option>
+                <option value="sanitation">Sanitation</option>
+                <option value="fire">Fire</option>
+                <option value="animal">Animal Control</option>
+            </select>
+    </div>
+
+    <!--Description text area-->
+    <div class="form-group">
+        <label for="description">2. Briefly describe issue</label>
+            <textarea id="description" name="description" rows="4" maxlength="300" placeholder="Describe issue" required></textarea>
+    </div>
+
+    <!--Different wards dropdown-->
+    <div class="form-group">
+        <label for="ward">3. Select Ward</label>
+            <select id="ward" name="ward" required>
+                <option value="">-- Select a Ward --</option>
+                <option value="1">Ward 1</option>
+                <option value="2">Ward 2</option>
+                <option value="3">Ward 3</option>
+                <option value="4">Ward 4</option>
+                <option value="5">Ward 5</option>
+                <option value="6">Ward 6</option>
+                <option value="7">Ward 7</option>
+                <option value="8">Ward 8</option>
+                <option value="9">Ward 9</option>
+                <option value="10">Ward 10</option>
+                <option value="11">Ward 11</option>
+                <option value="12">Ward 12</option>
+                <option value="13">Ward 13</option>
+                <option value="14">Ward 14</option>
+            </select>
+    </div>
+
+    <!--2 different ways to insert location-->
+    <div class="insert-location">
+        <label>4. Insert location</label>
+        <div class="location-buttons">
+            <button type="button">Insert GPS Location</button>
+                <span class="or-text">OR</span>
+                    <button type="button">Select Using a Map</button>
+        </div>
+    </div>
+
+<!--Upload Image -->
+<div class="form-group">
+    <label>5. Upload image</label>
+    
+    <!-- Allowed file types-->
+    <input type="file" id="image" name="image" accept=".jpg, .jpeg, .png" style="display: none;">
+     
+    <!-- Custom label that acts as the box -->
+    <label for="image" class="custom-upload-box">
+        <img src="images\file-upload-svgrepo-com.svg" alt="Upload">
+    </label>
+</div>
+        
+<!--Clear and Submit Buttons-->
+<div class="form-actions">
+    <button type="reset">Clear Form</button>
+    <button type="submit">Submit</button>
+</div>
+
+    </form>
+</section>
+</main>
+
+<footer>
+    <nav>
+        <a href="">About Us</a>
+        <a href="">Contact</a>
+        <a href="">Help</a>
+        <a href="">Terms and Conditions</a>
+    </nav>
+    <p>&copy; 2026 MakhandaPulse. All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
