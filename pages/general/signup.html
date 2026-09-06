@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | MakhandaPulse</title>
+    <link rel="stylesheet" href="styleslk.css">
+</head>
+<body>
+<header>
+    <!-- Self made logo-->
+    <div id="logo">
+        <h1 id="Makhanda">Makhanda</h1>
+        <h1 id="Pulse">Pulse</h1>
+    </div>
+
+
+    <!--Navigation links-->
+    <nav>
+        <a href="dashboard.html">Home</a>
+        <a href="">About Us</a>
+        <a href="">Services</a>
+        <a href="">Ward Notices</a>
+        <a href="">Contact</a>
+    </nav>
+
+    <!--Profile and Logout-->
+    <div id="profile-actions">
+        <a href="">My Profile</a>
+        <a href="">Logout</a>
+    </div>
+</header>
+<main>
+<section class="dashboard-card">
+<h2 style="text-align: center;">LOGIN FORM</h2>
+  <form action = "urreg.php" method = "POST" >
+    <table bgcolor = "" width ="30%">
+<tr> <th colspan="2"> <h3 > COMPLETE USER REGISTRATION FORM</h3></th></tr>
+
+<tr><td>ID Number </td><td> <input type = "text" name="idnumber" maxlength="35" size="20" value="" required> </td></tr> 
+<tr><td>Surname </td><td> <input type = "text" name="surname" maxlength="35" size="20" value="" required> </td></tr> 
+<tr><td>First Name</td><td> <input type = "text" name="firstname" maxlength="35" size="20" value="" required> </td></tr> 
+
+<tr><td>Gender</td><td> <input type="radio" name="gender" value="Female" required> Female
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Other"> Other</td></tr>
+
+<tr><td>User Role</td>
+    <td><select id="userrole" name="userrole" required>
+        <option value="">Select Role</option>
+        <option value="Administrator">Administrator</option>
+        <option value="Councillor">Councillor</option>
+        <option value="Guest">Guest</option>
+        <option value="Manager">Manager</option>
+        <option value="Resident">Resident</option>
+    </select></td></tr>
+
+<tr><td>User Name</td><td> <input type = "text" name="username" maxlength="35" size="20" value="" required> </td></tr> 
+<tr><td>Password</td><td> <input type = "text" name="pword" maxlength="35" size="20" value="" required> </td></tr> 
+
+<tr><td>Ward</td>
+    <td><select id="ward" name="ward" required>
+        <option value="">Select Ward</option>
+        <option value="Ward 1">Ward 1</option>
+        <option value="Ward 2">Ward 2</option>
+        <option value="Ward 3">Ward 3</option>
+        <option value="Ward 4">Ward 4</option>
+        <option value="Ward 5">Ward 5</option>
+        <option value="Ward 6">Ward 6</option>
+        <option value="Ward 7">Ward 7</option>
+        <option value="Ward 8">Ward 8</option>
+        <option value="Ward 9">Ward 9</option>
+        <option value="Ward 10">Ward 10</option>
+        <option value="Ward 11">Ward 11</option>
+        <option value="Ward 12">Ward 12</option>
+        <option value="Ward 13">Ward 13</option>
+        <option value="Ward 14">Ward 14</option>
+ </select></td>
+ </tr><tr>
+<td>Physical Adress</td> <td><textarea rows="4" cols="20" name="physAdress"></textarea></td> </tr>
+<tr><td>Contact</td><td> <input type = "text" name="contact" maxlength="35" size="15" value="" required> </td></tr> 
+<tr><td> Email Adress</td><td> <input type="email" name="email" maxlength="35" size="20"></td></tr>
+<tr><td><input type="submit" value="   Create User   "></td><td><input type="reset" value="   Clear Form   "></td></tr>
+</table>
+</section>
+</form> 
+</main>
+    <footer>
+        <nav>
+            <a href="">About Us</a>
+            <a href="">Contact</a>
+            <a href="">Help</a>
+            <a href="">Terms and Conditions</a>
+        </nav>
+        <p>&copy; 2026 MakhandaPulse. All Rights Reserved</p>
+    </footer>
+
+</body>
