@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakhandaPulse/Dashboard</title>
+    <link rel="stylesheet" href="styleslk.css">
+</head>
+<body>
+<header>
+    <!--Self-made logo -->
+    <div id="logo">
+        <h1 id="Makhanda">Makhanda</h1>
+        <h1 id="Pulse">Pulse</h1>
+    </div>
+
+    <!-- Dashboard nav-->
+    <nav id="nav-links">
+        <a href="homegen.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="notices.html">Ward Notices</a>
+        <a href="contactus.html">Contact</a>
+    </nav>
+
+    <!--Profile & Logout-->
+    <div id="profile-actions">
+        <a href="">My Profile</a>
+        <a href="">Logout</a>
+    </div>
+</header>
+
+<main>
+    <!-- Section for welcome message and Makhanda's landscape image-->
+    <section class="welcome-banner">
+
+    <div class="welcome-text">
+        <h1>Welcome to Makhanda Pulse</h1>
+        <p>This website is here to aid you in solving municipal issues and keep you informed on muniple notices and other information important to your safty.</p>
+        <p>Become a member to report issues and receive updates on your tickets.</p>
+        <button type="button" onclick="window.location.href='Signin.html'">Sign Up</button>
+    </div>
+        
+        <div class="welcome-image">
+        <img src="..\..\images\homepic.jpg" alt="Makhanda landscape" width="400" height="250">
+        </div>
+    </section>
+
+    <!-- Dashboard Grid -->
+    <div class="dashboard-grid">
+
+<section class="dashboard-card">
+    <div class="card-header">
+        <h3>Learn About Us</h3>
+    </div>
+    <p>Learn About the The People who created Makhanda Pulse</p>
+    <a href="aboutus.html"><button type="button">Learn More</button></a>
+</section>
+
+        <!-- Section for personalised Ward Notices -->
+        <section class="dashboard-card">
+            <div class="card-header">
+                <h3>Ward 2 Notices</h3> <!-- Placeholder -->
+                <a href="notices.html"><button type="button">View All</button></a>
+            </div>
+            
+            <article>
+                <p><bold>Water Outage:</bold> Scheduled maintenance on Friday.</p> <!-- Placeholder -->
+                <a href="">Read more...</a>
+            </article>
+            
+            <article>
+                <p><bold>Community Meeting:</bold> Saturday at the Hall.</p> <!-- Placeholder -->
+                <a href="">Read more...</a>
+            </article>
+        </section>
+
+        <!-- Section for Latest Announcements -->
+        <section class="dashboard-card">
+            <div class="card-header">
+                <h3>Latest Announcements</h3>
+                <button type="button">View All</button>
+            </div>
+            
+            <article>
+                <p><bold>Budget Review:</bold> Comments open until September.</p> <!-- Placeholder -->
+                <a href="">Read more...</a>
+            </article>
+            
+            <article>
+                <p><bold>Load Shedding:</bold> Stage 2 scheduled for tomorrow.</p> <!-- Placeholder -->
+                <a href="">Read more...</a>
+            </article>
+        </section>
+
+        <!-- Section for General town info -->
+        <section class="dashboard-card">
+            <div class="card-header">
+                <h3>Grahamstown Weather</h3>
+            </div>
+            <img src="..\..\images\Makanda Weather.png" alt="Makhanda landscape" width="400" height="250">
+            
+        </section>
+
+    </div> <!--The grid layout ends here -->
+</main>
+
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact</a>
+            <a href="">Help</a>
+            <a href="">Terms and Conditions</a>
+        </nav>
+        <p>&copy; 2026 MakhandaPulse. All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
