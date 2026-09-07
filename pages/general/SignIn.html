@@ -16,14 +16,13 @@
 
 
     <!--Navigation links-->
-    <nav>
-        <a href="dashboard.html">Home</a>
-        <a href="">About Us</a>
-        <a href="">Services</a>
-        <a href="">Ward Notices</a>
-        <a href="">Contact</a>
+    <nav id="nav-links">
+        <a href="homegen.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="notices.html">Ward Notices</a>
+        <a href="contactus.html">Contact</a>
     </nav>
-
     <!--Profile and Logout-->
     <div id="profile-actions">
         <a href="">My Profile</a>
@@ -32,26 +31,27 @@
 </header>
 <main>
 
-    <article>
-<h2 style="text-align: center;">LOGIN FORM</h2>
+   <section class="dashboard-card">
+<h2>LOGIN FORM</h2>
 <form action = "login.php" method="POST" autocomplete="off">
-    <lable style="margin-left: 5%;">USER NAME: <input type="text" name="username" 
+    <lable>USER NAME: <input type="text" name="username" 
         maxlength="35" size="20" placeholder="enter username" required > </lable>
 <br>
 <br>
-<label style="margin-left: 5%;">PASSWORD: <input type="password" name="password" 
+<label>PASSWORD: <input type="password" name="password" 
         maxlength="35" size="20" placeholder="enter password" required ></label>
 
-        <p><button type="submit" style="margin-left: 5%;">LOGIN</button></p>
-        <p><a href="forgottenPasswordForm.html"><button type="submit" style="margin-left: 5%;">forgot your password</button></a></p>
-         <p><a href="signup.html"><button type="button" style="margin-left: 5%;"> Sign Up</button></a></p>
-</article>
+        <p><button type="submit">LOGIN</button></p>
+        <p><a href="forgottenPasswordForm.html"><button type="submit" >forgot your password</button></a></p>
+         <p><a href="signup.html"><button type="button"> Sign Up</button></a></p>
+
 </form>
+   </section>
 </main>
     <footer>
         <nav>
-            <a href="">About Us</a>
-            <a href="">Contact</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact</a>
             <a href="">Help</a>
             <a href="">Terms and Conditions</a>
         </nav>
