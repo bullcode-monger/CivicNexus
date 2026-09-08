@@ -32,30 +32,27 @@
 </header>
 <main>
 <section class="dashboard-card">
-<h2 style="text-align: center;">LOGIN FORM</h2>
-  <form action = "urreg.php" method = "POST" >
+<h2>LOGIN FORM</h2>
+  <form action = "signup.php" method = "POST" >
     <table bgcolor = "" width ="30%">
 <tr> <th colspan="2"> <h3 > COMPLETE USER REGISTRATION FORM</h3></th></tr>
 
-<tr><td>ID Number </td><td> <input type = "text" name="idnumber" maxlength="35" size="20" value="" required> </td></tr> 
-<tr><td>Surname </td><td> <input type = "text" name="surname" maxlength="35" size="20" value="" required> </td></tr> 
-<tr><td>First Name</td><td> <input type = "text" name="firstname" maxlength="35" size="20" value="" required> </td></tr> 
-
-<tr><td>Gender</td><td> <input type="radio" name="gender" value="Female" required> Female
-<input type="radio" name="gender" value="Male"> Male
-<input type="radio" name="gender" value="Other"> Other</td></tr>
-
 <tr><td>User Role</td>
-    <td><select id="userrole" name="userrole" required>
+    <td><select id="role" name="role" required>
         <option value="">Select Role</option>
-        <option value="Administrator">Administrator</option>
-        <option value="Councillor">Councillor</option>
-        <option value="Guest">Guest</option>
-        <option value="Manager">Manager</option>
-        <option value="Resident">Resident</option>
+        <option value="community member">Community Member</option>
+        <option value="administrator">Administrator</option>
+        <option value="ward councillor">Ward Councillor</option>
+        <option value="municipal staff">Municipal Staff</option>
+        
     </select></td></tr>
+<tr><td>First Name</td><td> <input type = "text" name="firstname" maxlength="35" size="20" value="" required> </td></tr> 
+<tr><td>Last Name </td><td> <input type = "text" name="surname" maxlength="35" size="20" value="" required> </td></tr> 
 
-<tr><td>User Name</td><td> <input type = "text" name="username" maxlength="35" size="20" value="" required> </td></tr> 
+<tr><td> Email Adress</td><td> <input type="email" name="email" maxlength="35" size="20"></td></tr>
+
+
+
 <tr><td>Password</td><td> <input type = "text" name="pword" maxlength="35" size="20" value="" required> </td></tr> 
 
 <tr><td>Ward</td>
@@ -77,9 +74,9 @@
         <option value="Ward 14">Ward 14</option>
  </select></td>
  </tr><tr>
-<td>Physical Adress</td> <td><textarea rows="4" cols="20" name="physAdress"></textarea></td> </tr>
-<tr><td>Contact</td><td> <input type = "text" name="contact" maxlength="35" size="15" value="" required> </td></tr> 
-<tr><td> Email Adress</td><td> <input type="email" name="email" maxlength="35" size="20"></td></tr>
+<td>Physical Adress</td> <td><textarea rows="4" cols="20" name="adress"></textarea></td> </tr>
+
+
 <tr><td><input type="submit" value="   Create User   "></td><td><input type="reset" value="   Clear Form   "></td></tr>
 </table>
 </section>
