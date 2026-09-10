@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notifications | Makhanda Pulse</title>
+        <link rel="stylesheet" href="assets/css/dashboard.css">
+    </head>
+    <body>
+        <nav id="sidebar">
+            <ul>
+                <li class="sidebar-brand">Makhanda <span>Pulse</span></li>
+                <li>
+                    <a href="dashboard.html"><img src="assets/icons/dashboard_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        <span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="manageFault.html">
+                    <img src="assets/icons/checklist_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    <span>Todo</span>
+                </a></li>
+                <li class="active">
+                    <a href="notifications.html"><img src="assets/icons/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        <span>Notifications</span><span class="nav-badge">3</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <img src="assets/icons/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        <span>Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main class="main-wrapper page-shell">
+            <div class="account-bar"><a class="account-link" href="profile.html"><img src="assets/icons/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">James Edwin Baloyi</a><a class="logout-link" href="../../home.html">Log out</a></div>
+            <section class="page-intro">
+                <div>
+                    <p class="eyebrow">Stay informed</p>
+                    <h1>Notifications</h1>
+                    <p>Recent changes across the municipal fault queue.</p>
+                </div>
+                <button class="button-secondary" data-dismiss-all>Mark all as read</button>
+            </section>
+            <section class="panel">
+                <div class="notification-list">
+                    <article class="notification-item">
+                        <div>
+                            <p><strong>#FT-1039</strong> was assigned to you for follow-up.</p><small>10 minutes ago · Electrical</small>
+                        </div>
+                        <button class="button-secondary" data-dismiss>Dismiss</button>
+                    </article>
+                    <article class="notification-item">
+                        <div>
+                            <p>Resident feedback was added to <strong>#FT-1040</strong>.</p><small>1 hour ago · Facilities</small>
+                        </div>
+                        <button class="button-secondary" data-dismiss>Dismiss</button>
+                    </article>
+                    <article class="notification-item">
+                        <div>
+                            <p><strong>#FT-1038</strong> was marked completed by the maintenance team.</p><small>Yesterday · HVAC</small>
+                        </div>
+                        <button class="button-secondary" data-dismiss>Dismiss</button>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>

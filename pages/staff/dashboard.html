@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard | Makhanda Pulse</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+    <nav id="sidebar" aria-label="Staff navigation">
+        <ul>
+            <li class="sidebar-brand">Makhanda <span>Pulse</span></li>
+            <li class="active">
+                <a href="dashboard.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h16<PASSWORD>"/></svg>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <button onclick="toggleSubMenu(this)" class="dropdown-btn" aria-expanded="false">
+                    <img src="assets/icons/checklist_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    <a href="manageFault.html"></a>
+                        <span>Todo</span>
+                    </a>
+                    <img src="assets/icons/keyboard_arrow_down_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="manageFault.html">All Tickets</a>
+                        </li>
+                        <li>
+                            <a href="manageFault.html#in-progress">In Progress</a>
+                        </li>
+                        <li>
+                            <a href="manageFault.html#completed">Completed</a>
+                        </li>
+                    </ul>
+                </li>
+            <li>
+                <a href="notifications.html">
+                    <img src="assets/icons/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    <span>Notifications</span><span class="nav-badge">3</span>
+                </a>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <img src="assets/icons/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span>Profile</span></a></li>
+        </ul>
+    </nav>
+    <main class="main-wrapper page-shell">
+        <div class="account-bar"><a class="account-link" href="profile.html"><img src="assets/icons/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">James Edwin Baloyi</a><a class="logout-link" href="../../home.html">Log out</a></div>
+        <section class="page-intro">
+            <div><p class="breadcrumb">Staff workspace / Overview</p><p class="eyebrow">Daily operations</p><h1>Dashboard</h1><p>Keep municipal faults moving from report to resolution.</p></div>
+            <div class="quick-actions"><a class="button" href="manageFault.html">Open ticket queue</a><a class="button-secondary" href="notifications.html">View notifications</a></div>
+        </section>
+        <section class="summary-grid" aria-label="Ticket summary"><div class="summary-card"><strong>25</strong><span>Open faults</span></div><div class="summary-card"><strong>10</strong><span>In progress</span></div><div class="summary-card"><strong>5</strong><span>Completed this week</span></div></section>
+        <div class="detail-grid">
+            <section class="panel"><div class="panel-header"><div><h2>Recent activity</h2><p class="muted">The latest changes in your queue.</p></div><a class="button-secondary" href="manageFault.html">View all</a></div><ul class="activity-list"><li><strong>#FT-1040</strong> reported: water pressure in Building A<br><span class="muted">Today · New report</span></li><li><strong>#FT-1039</strong> assigned to you for follow-up<br><span class="muted">Today · Electrical</span></li><li><strong>#FT-1038</strong> marked completed by the maintenance team<br><span class="muted">Yesterday · HVAC</span></li></ul></section>
+            <section class="panel"><div class="panel-header"><div><h2>Today</h2><p class="muted">Your upcoming schedule.</p></div></div><ul class="activity-list"><li><strong>10:00</strong> Team meeting<br><span class="muted">Municipal Services · Boardroom</span></li><li><strong>14:00</strong> Maintenance training<br><span class="muted">Operations centre</span></li><li><strong>3 tasks</strong> due this week<br><a href="manageFault.html">Review Todo list</a></li></ul></section>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

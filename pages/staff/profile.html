@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Profile | Makhanda Pulse</title><link rel="stylesheet" href="assets/css/dashboard.css"></head>
+<body>
+    <nav id="sidebar">
+        <ul>
+            <li class="sidebar-brand">Makhanda <span>Pulse</span></li>
+            <li>
+                <a href="dashboard.html">
+                    <img src="assets/icons/dashboard_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="manageFault.html">
+                    <img src="assets/icons/checklist_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    <span>Todo</span>
+                </a>
+            </li>
+            <li>
+                <a href="notifications.html">
+                    <img src="assets/icons/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        <span>Notifications</span><span class="nav-badge">3</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="profile.html">
+                    <img src="assets/icons/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    <span>Profile</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main class="main-wrapper page-shell">
+        <div class="account-bar"><a class="account-link" href="profile.html"><img src="assets/icons/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">James Edwin Baloyi</a><a class="logout-link" href="../../home.html">Log out</a></div>
+        <section class="page-intro">
+            <div>
+                <p class="eyebrow">Account settings</p>
+                <h1>Profile</h1>
+                <p>Keep your staff details and contact information up to date.</p>
+            </div>
+        </section>
+        <section class="profile-grid">
+            <div class="panel">
+                <div class="panel-header">
+                    <div>
+                        <h2>Personal details</h2>
+                        <p class="muted">Visible to your municipal team.</p>
+                    </div>
+                </div>
+                <form class="profile-form" data-profile-form>
+                    <div class="profile-field">
+                        <label for="full-name">Full name</label>
+                        <input class="profile-input" id="full-name" value="James Edwin Baloyi" autocomplete="name" required>
+                    </div>
+                    <div class="profile-field">
+                        <label for="email">Email address</label>
+                        <input class="profile-input" id="email" type="email" value="james.baloyi@makhanda.gov.za" autocomplete="email" required>
+                    </div>
+                    <div class="profile-field">
+                        <label for="phone">Phone number</label>
+                        <input class="profile-input" id="phone" value="046 603 8000">
+                    </div>
+                    <button class="button" type="submit">Save changes</button>
+                    <p class="muted" data-form-message role="status"></p>
+                </form>
+            </div>
+            <div class="panel">
+                <div class="panel-header">
+                    <div>
+                        <h2>Role overview</h2>
+                        <p class="muted">Your current CivicNexus access.</p>
+                    </div>
+                </div>
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <label>Role</label><p>Staff member</p></div><div class="detail-item">
+                            <label>Department</label><p>Municipal Services</p>
+                        </div>
+                        <div class="detail-item">
+                            <label>Location</label><p>Makhanda</p>
+                        </div>
+                        <div class="detail-item">
+                            <label>Member since</label><p>January 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>

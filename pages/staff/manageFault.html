@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo | Makhanda Pulse</title>
+	<link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+	<nav id="sidebar"><ul>
+		<li class="sidebar-brand">Makhanda <span>Pulse</span></li>
+		<li>
+            <a href="dashboard.html">
+                <img src="assets/icons/dashboard_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <span>Dashboard</span>
+            </a>
+        </li>
+		<li class="active">
+            <button onclick="toggleSubMenu(this)" class="dropdown-btn">
+                <img src="assets/icons/checklist_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <span>Todo</span>
+                <img src="assets/icons/keyboard_arrow_down_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </button>
+            <ul class="sub-menu show">
+                <li>
+                    <a href="manageFault.html">All Tickets</a>
+                </li>
+                <li>
+                    <a href="manageFault.html#in-progress">In Progress</a></li><li><a href="manageFault.html#completed">Completed</a></li></ul></li>
+		<li><a href="notifications.html"><img src="assets/icons/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span>Notifications</span><span class="nav-badge">3</span></a></li>
+		<li><a href="profile.html"><img src="assets/icons/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span>Profile</span></a></li>
+	</ul></nav>
+	<main class="main-wrapper page-shell">
+		<div class="account-bar"><a class="account-link" href="profile.html"><img src="assets/icons/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">James Edwin Baloyi</a><a class="logout-link" href="../../home.html">Log out</a></div>
+		<section class="page-intro"><div><p class="eyebrow">Staff workspace</p><h1>Todo</h1><p>Track, assign and update reported faults.</p></div><a class="button" href="updateTicket.html">Create ticket</a></section>
+		<section class="summary-grid"><div class="summary-card"><strong>25</strong><span>Open tickets</span></div><div class="summary-card"><strong>10</strong><span>In progress</span></div><div class="summary-card"><strong>5</strong><span>Completed this week</span></div></section>
+		<section class="panel"><div class="panel-header"><div><h2>Ticket queue</h2><p class="muted">Select a ticket status to keep the queue current.</p></div></div><div class="filter-bar"><input class="search-input" type="search" data-filter placeholder="Search ticket ID or issue" aria-label="Search tickets"><select class="status-select" data-status-filter aria-label="Filter ticket status"><option>All statuses</option><option>Open</option><option>In Progress</option><option>Completed</option></select></div><div class="ticket-list">
+			<article class="ticket-row" data-ticket><div class="ticket-copy"><strong>#FT-1040 · Water pressure in Building A</strong><span>Facilities · Reported today by Thandi Mokoena</span></div><span class="badge open">Open</span><select class="status-select" data-status aria-label="Update status for FT-1040"><option selected>Open</option><option>In Progress</option><option>Completed</option></select><a class="button-secondary" href="viewTicket.html">View</a></article>
+			<article class="ticket-row" data-ticket><div class="ticket-copy"><strong>#FT-1039 · Light fixture replacement in Lobby</strong><span>Electrical · Assigned to James Baloyi</span></div><span class="badge progress">In Progress</span><select class="status-select" data-status aria-label="Update status for FT-1039"><option>Open</option><option selected>In Progress</option><option>Completed</option></select><a class="button-secondary" href="updateTicket.html">Update</a></article>
+			<article class="ticket-row" data-ticket><div class="ticket-copy"><strong>#FT-1038 · HVAC maintenance in Conference Room</strong><span>HVAC · Closed yesterday</span></div><span class="badge completed">Completed</span><select class="status-select" data-status aria-label="Update status for FT-1038"><option>Open</option><option>In Progress</option><option selected>Completed</option></select><a class="button-secondary" href="viewTicket.html">View</a></article>
+		</div></section>
+	</main>
+	<script src="app.js"></script>
+</body>
+</html>
