@@ -1,50 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Update Ticket | Makhanda Pulse</title>
-        <link rel="stylesheet" href="assets/css/dashboard.css">
-    </head>
-    <body>
-        <header class="dashboard-header main-wrapper">
-            <div class="header-container">
-                <div class="logo">
-                    <img src="assets/icons/Logo.png" alt="Makhanda Pulse logo">
-                    <span>Makhanda</span><span id="pulse">Pulse</span>
-                </div>
-                <div class="name-container">
-                    <h2>Welcome James Edwin Baloyi</h2>
-                </div>
-            </div>
-        </header>
-        <nav id="sidebar">
-            <ul>
-                <li>
-                    <button onclick="toggleSidebar()" id="toggle-btn" aria-label="Toggle sidebar">
-                        <img src="assets/icons/keyboard_double_arrow_left_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                    </button>
-                </li>
-                <li>
-                    <a href="dashboard.html">
-                        <img src="assets/icons/dashboard_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                <li class="active">
-                    <a href="manageFault.html">
-                        <img src="assets/icons/checklist_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                        <span>Todo</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="notifications.html">
-                        <img src="assets/icons/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                        <span>Notifications</span><span class="nav-badge">3</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="profile.html">
-                        <img src="assets/icons/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                        <span>Profile</span>
-                    </a></li></ul></nav><main class="main-wrapper page-shell"><section class="page-intro"><div><p class="eyebrow">Ticket management</p><h1>Update ticket</h1><p>Change ownership, priority or progress for a reported fault.</p></div><a class="button-secondary" href="manageFault.html">Back to Todo</a></section><section class="panel"><div class="panel-header"><div><h2>#FT-1039 · Light fixture replacement in Lobby</h2><p class="muted">Last updated today at 08:45 by James Baloyi</p></div><span class="badge progress">In Progress</span></div><div class="detail-grid"><div class="profile-field"><label for="ticket-status">Status</label><select class="status-select" id="ticket-status"><option>Open</option><option selected>In Progress</option><option>Completed</option></select></div><div class="profile-field"><label for="priority">Priority</label><select class="status-select" id="priority"><option>Low</option><option selected>Medium</option><option>High</option></select></div><div class="profile-field"><label for="assignee">Assigned to</label><select class="status-select" id="assignee"><option selected>James Edwin Baloyi</option><option>Nomsa Dlamini</option><option>Unassigned</option></select></div><div class="profile-field"><label for="due-date">Due date</label><input class="profile-input" id="due-date" type="date" value="2026-09-12"></div></div><div class="profile-field" style="margin-top:16px"><label for="note">Progress note</label><textarea class="profile-input" id="note" rows="5" placeholder="Add a note for the next staff member..."></textarea></div><button class="button" type="button" data-save-ticket style="margin-top:16px">Save ticket</button><p class="muted" data-form-message role="status"></p></section></main><script src="app.js"></script></body></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Ticket | Makhanda Pulse</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+    <nav id="sidebar" aria-label="Staff navigation">
+        <ul>
+            <li class="sidebar-brand">Makhanda <span>Pulse</span></li>
+            <li><a href="dashboard.html"><img src="assets/icons/dashboard_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span>Dashboard</span></a></li>
+            <li class="active"><a href="manageFault.html"><img src="assets/icons/checklist_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span>Todo</span></a></li>
+            <li><a href="notifications.html"><img src="assets/icons/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span>Notifications</span><span class="nav-badge">3</span></a></li>
+            <li><a href="profile.html"><img src="assets/icons/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span>Profile</span></a></li>
+        </ul>
+    </nav>
+    <main class="main-wrapper page-shell">
+        <div class="account-bar"><a class="account-link" href="profile.html"><img src="assets/icons/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">James Edwin Baloyi</a><a class="logout-link" href="../../home.html">Log out</a></div>
+        <section class="page-intro"><div><p class="eyebrow">Ticket management</p><h1>Update ticket</h1><p>Change ownership, priority or progress for a reported fault.</p></div><a class="button-secondary" href="manageFault.html">Back to Todo</a></section>
+        <section class="panel"><div class="panel-header"><div><h2>#FT-1039 · Light fixture replacement in Lobby</h2><p class="muted">Last updated today at 08:45 by James Baloyi</p></div><span class="badge progress">In Progress</span></div><div class="detail-grid"><div class="profile-field"><label for="ticket-status">Status</label><select class="status-select" id="ticket-status"><option>Open</option><option selected>In Progress</option><option>Completed</option></select></div><div class="profile-field"><label for="priority">Priority</label><select class="status-select" id="priority"><option>Low</option><option selected>Medium</option><option>High</option></select></div><div class="profile-field"><label for="assignee">Assigned to</label><select class="status-select" id="assignee"><option selected>James Edwin Baloyi</option><option>Nomsa Dlamini</option><option>Unassigned</option></select></div><div class="profile-field"><label for="due-date">Due date</label><input class="profile-input" id="due-date" type="date" value="2026-09-12"></div></div><div class="profile-field" style="margin-top:16px"><label for="note">Progress note</label><textarea class="profile-input" id="note" rows="5" placeholder="Add a note for the next staff member..."></textarea></div><button class="button" type="button" data-save-ticket style="margin-top:16px">Save ticket</button><p class="muted" data-form-message role="status"></p></section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

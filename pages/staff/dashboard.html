@@ -7,22 +7,46 @@
     <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
 <body>
-    <header class="dashboard-header main-wrapper">
-        <div class="header-container">
-            <div class="logo"><img src="assets/icons/Logo.png" alt="Makhanda Pulse logo"><span>Makhanda</span><span id="pulse">Pulse</span></div>
-            <div class="name-container"><h2>Welcome James Edwin Baloyi</h2></div>
-        </div>
-    </header>
     <nav id="sidebar" aria-label="Staff navigation">
         <ul>
-            <li><button onclick="toggleSidebar()" id="toggle-btn" aria-label="Toggle sidebar"><img src="assets/icons/keyboard_double_arrow_left_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button></li>
-            <li class="active"><a href="dashboard.html"><img src="assets/icons/dashboard_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span>Dashboard</span></a></li>
-            <li><button onclick="toggleSubMenu(this)" class="dropdown-btn" aria-expanded="false"><img src="assets/icons/checklist_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span>Todo</span><img src="assets/icons/keyboard_arrow_down_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button><ul class="sub-menu"><li><a href="manageFault.html">All Tickets</a></li><li><a href="manageFault.html#in-progress">In Progress</a></li><li><a href="manageFault.html#completed">Completed</a></li></ul></li>
-            <li><a href="notifications.html"><img src="assets/icons/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span>Notifications</span><span class="nav-badge">3</span></a></li>
-            <li><a href="profile.html"><img src="assets/icons/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span>Profile</span></a></li>
+            <li class="sidebar-brand">Makhanda <span>Pulse</span></li>
+            <li class="active">
+                <a href="dashboard.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h16<PASSWORD>"/></svg>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <button onclick="toggleSubMenu(this)" class="dropdown-btn" aria-expanded="false">
+                    <img src="assets/icons/checklist_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    <a href="manageFault.html"></a>
+                        <span>Todo</span>
+                    </a>
+                    <img src="assets/icons/keyboard_arrow_down_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="manageFault.html">All Tickets</a>
+                        </li>
+                        <li>
+                            <a href="manageFault.html#in-progress">In Progress</a>
+                        </li>
+                        <li>
+                            <a href="manageFault.html#completed">Completed</a>
+                        </li>
+                    </ul>
+                </li>
+            <li>
+                <a href="notifications.html">
+                    <img src="assets/icons/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    <span>Notifications</span><span class="nav-badge">3</span>
+                </a>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <img src="assets/icons/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span>Profile</span></a></li>
         </ul>
     </nav>
     <main class="main-wrapper page-shell">
+        <div class="account-bar"><a class="account-link" href="profile.html"><img src="assets/icons/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">James Edwin Baloyi</a><a class="logout-link" href="../../home.html">Log out</a></div>
         <section class="page-intro">
             <div><p class="breadcrumb">Staff workspace / Overview</p><p class="eyebrow">Daily operations</p><h1>Dashboard</h1><p>Keep municipal faults moving from report to resolution.</p></div>
             <div class="quick-actions"><a class="button" href="manageFault.html">Open ticket queue</a><a class="button-secondary" href="notifications.html">View notifications</a></div>

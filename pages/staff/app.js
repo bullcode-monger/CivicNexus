@@ -1,30 +1,10 @@
-const toggleButton = document.getElementById('toggle-btn');
 const sidebar = document.getElementById('sidebar');
-
-function toggleSidebar() {
-    if (!sidebar || !toggleButton) return;
-
-    sidebar.classList.toggle('close');
-    toggleButton.classList.toggle('rotate');
-    document.body.classList.toggle('sidebar-collapsed', sidebar.classList.contains('close'));
-
-    Array.from(sidebar.getElementsByClassName('show')).forEach(ul => {
-        ul.classList.remove('show');
-        ul.previousElementSibling.classList.remove('rotate');  /*previous element is the dropdown button*/
-    })
-}
 
 function toggleSubMenu(button) {
     button.nextElementSibling.classList.toggle('show');
     button.classList.toggle('rotate');
     button.setAttribute('aria-expanded', button.classList.contains('rotate'));
 
-    if (sidebar.classList.contains('close')) {
-        sidebar.classList.toggle('close');
-        toggleButton.classList.toggle('rotate');
-        document.body.classList.toggle('sidebar-collapsed', sidebar.classList.contains('close'));
-
-    }
 }
 
 document.querySelectorAll('[data-filter]').forEach(filter => {
