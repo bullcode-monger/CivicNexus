@@ -49,14 +49,25 @@ header {
 }
 
 .profile-icon {
+    background-color: #9AC7BF;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #FFFFFF;
-    font-size: 23px;
     text-decoration: none;
-    transition: 0.3s;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: 0.2s ease;
 }
 
+
 .profile-icon:hover {
-    color: #9AC7BF;
+    background-color: #FFFFFF;
+    color: #172A39;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 /* main content */

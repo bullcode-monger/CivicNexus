@@ -5,25 +5,25 @@ session_start();
 include "dbConnection.php";
 
 // check if the councillor is logged in
-if (!isset($_SESSION['username']) || !isset($_SESSION['userID']) || !isset($_SESSION['ward'])) {
+if (!isset($_SESSION['Username']) || !isset($_SESSION['UserID']) || !isset($_SESSION['Ward'])) {
     header("Location: login.php");
     exit();
 }
 
-$userID = $_SESSION['userID'];
-$ward = $_SESSION['ward'];
+$UserID = $_SESSION['UserID'];
+$Ward = $_SESSION['Ward'];
 
 $message = "";
 $error = "";
 
 // generate notice
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $title = trim($_POST['title']);
-    $noticeType = trim($_POST['noticeType']);
-    $publishDate = $_POST['publishDate'];
-    $expiryDate = $_POST['expiryDate'];
+    $Title = trim($_POST['Title']);
+    $NoticeType = trim($_POST['NoticeType']);
+    $PublishDate = $_POST['PublishDate'];
+    $ExpiryDate = $_POST['ExpiryDate'];
 
-    if (empty($title) || empty($noticeType) || empty($publishDate) || empty($expiryDate)) {
+    if (empty($Title) || empty($NoticeType) || empty($PublishDate) || empty($ExpiryDate)) {
         $error = "Please complete all fields.";
     } elseif ($expiryDate < $publishDate) {
         $error = "Expiry date cannot be before the publish date.";
@@ -32,11 +32,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $conn->begin_transaction();
 
             // insert notice
-            $sql = "INSERT INTO notices (WardID, Tiitle, NouticeType, PublishDate, ExpiryDate)
+            $sql = "INSERT INTO notices (WardID, Title, NoticeType, PublishDate, ExpiryDate)
                     VALUES (?, ?, ?, ?, ?)";
 
             $stmt = $conn->prepare($sql);
-            $stmt->bind_param("issss", $ward, $title, $noticeType, $publishDate, $expiryDate);
+            $stmt->bind_param("issss", $Ward, $Title, $NoticeType, $PublishDate, $ExpiryDate);
 
             if (!$stmt->execute()) {
                 throw new Exception("Notice could not be generated.");
@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $action = "CREATE";
             $tableName = "notices";
             $status = "successful";
-            $description = "Ward " . $ward . " notice '" . $title . "' was generated and published.";
+            $description = "Ward " . $Ward . " notice '" . $Title . "' was generated and published.";
 
             $auditSQL = "INSERT INTO auditlog
                         (UserID, Action, TableName, RecordID, Status, Description, DateTime)
@@ -58,12 +58,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $auditStmt = $conn->prepare($auditSQL);
             $auditStmt->bind_param(
                 "ississ",
-                $userID,
-                $action,
-                $tableName,
-                $noticeID,
-                $status,
-                $description
+                $UserID,
+                $Action,
+                $TableName,
+                $NoticeID,
+                $Status,
+                $Description
             );
 
             if (!$auditStmt->execute()) {
@@ -81,11 +81,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $conn->rollback();
 
             // create unsuccessful audit log
-            $action = "CREATE";
-            $tableName = "notices";
-            $recordID = 0;
-            $status = "unsuccessful";
-            $description = "Unsuccessful attempt to generate a Ward " . $ward . " notice.";
+            $Action = "CREATE";
+            $TableName = "notices";
+            $RecordID = 0;
+            $Status = "unsuccessful";
+            $Description = "Unsuccessful attempt to generate a Ward " . $ward . " notice.";
 
             $auditSQL = "INSERT INTO auditlog
                         (UserID, Action, TableName, RecordID, Status, Description, DateTime)
@@ -94,12 +94,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $auditStmt = $conn->prepare($auditSQL);
             $auditStmt->bind_param(
                 "ississ",
-                $userID,
-                $action,
-                $tableName,
-                $recordID,
-                $status,
-                $description
+                $UserID,
+                $Action,
+                $TableName,
+                $RecordID,
+                $Status,
+                $Description
             );
             $auditStmt->execute();
             $auditStmt->close();
