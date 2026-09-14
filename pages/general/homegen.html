@@ -22,11 +22,11 @@
         <a href="notices.html">Ward Notices</a>
         <a href="contactus.html">Contact</a>
     </nav>
-
+<!--<a href="..\admin\dashboard.html">My Profile</a>--> 
     <!--Profile & Logout-->
     <div id="profile-actions">
-        <a href="">My Profile</a>
-        <a href="">Logout</a>
+    <button type="button" onclick="window.location.href='signup.html'">Sign Up</button>
+    <button type="button" onclick="window.location.href='Signin.html'">Sign In</button>
     </div>
 </header>
 
@@ -37,8 +37,7 @@
     <div class="welcome-text">
         <h1>Welcome to Makhanda Pulse</h1>
         <p>This website is here to aid you in solving municipal issues and keep you informed on muniple notices and other information important to your safty.</p>
-        <p>Become a member to report issues and receive updates on your tickets.</p>
-        <button type="button" onclick="window.location.href='Signin.html'">Sign Up</button>
+        
     </div>
         
         <div class="welcome-image">
@@ -47,48 +46,54 @@
     </section>
 
     <!-- Dashboard Grid -->
-    <div class="dashboard-grid">
+    <div class="dashboard-grid-dashboard">
 
 <section class="dashboard-card">
     <div class="card-header">
         <h3>Learn About Us</h3>
     </div>
-    <p>Learn About the The People who created Makhanda Pulse</p>
+    <p>Makhanda Pulse was created in 2026, the the sponsership of the Makhanda Municipality and Rhodes University to help establish a platform for community engagement between 
+        residents and the municipality.
+    </p>
+    <p></p>
     <a href="aboutus.html"><button type="button">Learn More</button></a>
 </section>
 
         <!-- Section for personalised Ward Notices -->
         <section class="dashboard-card">
             <div class="card-header">
-                <h3>Ward 2 Notices</h3> <!-- Placeholder -->
+                <h3>Ward Notices</h3> <!-- Placeholder -->
                 <a href="notices.html"><button type="button">View All</button></a>
+                
             </div>
-            
+             <img src="..\..\images\Letter.png" alt="Makhanda landscape" width="400" height="250">
+            <p>View important notices for your ward.</p>
+                <p>These notices focus on faults on infrastructure in your ward, and can act as a warning about potentail dangers in that ward.</p>
+                
             <article>
-                <p><bold>Water Outage:</bold> Scheduled maintenance on Friday.</p> <!-- Placeholder -->
-                <a href="">Read more...</a>
+                <p><bold>See the latest notices</bold> </p> <!-- Placeholder -->
+                <a href="notices.html">Read more...</a>
             </article>
             
-            <article>
-                <p><bold>Community Meeting:</bold> Saturday at the Hall.</p> <!-- Placeholder -->
-                <a href="">Read more...</a>
-            </article>
+           
         </section>
 
         <!-- Section for Latest Announcements -->
         <section class="dashboard-card">
             <div class="card-header">
-                <h3>Latest Announcements</h3>
+                <h3>Services</h3>
                 <button type="button">View All</button>
             </div>
+             <img src="..\..\images\Wrench.png" alt="Makhanda landscape" width="400" height="250">
+            <p>Learn about the services available in your ward.</p>
             
             <article>
-                <p><bold>Budget Review:</bold> Comments open until September.</p> <!-- Placeholder -->
+                <p><bold>Fire Damage Repair:</bold> Get incontact with your Firefighters.</p> <!-- Placeholder -->
                 <a href="">Read more...</a>
             </article>
             
             <article>
-                <p><bold>Load Shedding:</bold> Stage 2 scheduled for tomorrow.</p> <!-- Placeholder -->
+                <p><bold>Electrical Services:</bold> Report damaged electrical lines.</p> <!-- Placeholder -->
                 <a href="">Read more...</a>
             </article>
         </section>
@@ -96,12 +101,15 @@
         <!-- Section for General town info -->
         <section class="dashboard-card">
             <div class="card-header">
-                <h3>Grahamstown Weather</h3>
+                <h3>Become a Community Member Today</h3>
             </div>
-            <img src="..\..\images\Makanda Weather.png" alt="Makhanda landscape" width="400" height="250">
-            
+            <p>Become a member to report issues and receive updates on your tickets.</p>
+            <p>Improve your town with your and your neighbors help and make a meaningful difference and know you have a impact on Makhanda.</p>
+            <p> If your are already a member, <a href="Signin.html">sign in</a>.</p>
+             <a href="Signup.html"><button type="button">Sign Up</button></a>
+      
         </section>
-
+ <!--<button type="button" onclick="window.location.href='Signin.html'">Sign Up</button>--> 
     </div> <!--The grid layout ends here -->
 </main>
 

@@ -125,6 +125,12 @@ main {
     gap: 20px; /* Space between the cards */
 }
 
+.dashboard-grid-dashboard {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* This creates two perfectly equal, flexible columns that automatically adjust their width to fill the available space on the screen instead of guessing the pixels */
+    gap: 20px; /* Space between the cards */
+}
+
 /* Individual block styling (the beige cards) */
 .dashboard-card {
     background-color: #E9E4E0; /* Light beige background (30%) */
@@ -224,12 +230,12 @@ article {
     margin-bottom: 15px;
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Makes the card lift on hover */
+    /*transition: transform 0.2s ease, box-shadow 0.2s ease; /* Makes the card lift on hover */
 }
 
 article:hover {
-    transform: translateY(-2px); /* Moves card up slightly */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /*transform: translateY(-2px); /* Moves card up slightly */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
 }
 
 article p {
@@ -258,7 +264,7 @@ button {
 button:hover {
     background-color: #9AC7BF;
     color: #172A39;
-    border: 1px solid #172A39;
+    /* border: 1px solid #172A39; */
 }
 
 /* Footer styling */
