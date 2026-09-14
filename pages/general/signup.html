@@ -26,8 +26,8 @@
 
     <!--Profile and Logout-->
     <div id="profile-actions">
-        <a href="">My Profile</a>
-        <a href="">Logout</a>
+<button type="button" onclick="window.location.href='signup.html'">Sign Up</button>
+        <button type="button" onclick="window.location.href='Signin.html'">Sign In</button>
     </div>
 </header>
 <main>
@@ -36,14 +36,6 @@
   <form action = "signup.php" method = "POST" >
     <table bgcolor = "" width ="30%">
 <tr> <th colspan="2"> <h3 > COMPLETE USER REGISTRATION FORM</h3></th></tr>
-
-<tr><td>User Role</td>
-    <td><select id="role" name="role" required>
-        <option value="">Select Role</option>
-        <option value="community member">Community Member</option>
-        <option value="administrator">Administrator</option>
-        <option value="ward councillor">Ward Councillor</option>
-        <option value="municipal staff">Municipal Staff</option>
         
     </select></td></tr>
 <tr><td>First Name</td><td> <input type = "text" name="firstname" maxlength="35" size="20" value="" required> </td></tr> 
