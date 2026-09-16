@@ -16,60 +16,22 @@
 </div>
 
 <nav id="nav-links">
-    <a href="">Home</a>
-    <a href="">About Us</a>
-    <a href="">Services</a>
-    <a href="">Ward Notices</a>
-    <a href="">Contact Us</a>
+    <a href="homegen.html">Home</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="notices.php">Ward Notices</a>
+    <a href="contactus.html">Contact Us</a>
 </nav>
 
 <div id="profile-actions">
-    <a href="">My Profile</a>
-    <a href="">Logout</a>
+ <button type="button" onclick="window.location.href='signup.html'">Sign Up</button>
+        <button type="button" onclick="window.location.href='Signin.html'">Sign In</button>
 </div>
 </header>
     <main>
-    <div class="dashboard-grid">
+    <div class="dashboard-grid-dashboard">
 <section class="dashboard-card" style="width: 70%;">
 
-<form action = "searchRecord.php" method = "GET" style="float: left;">
-<centre>
-<table>
-<tr>
-<th> <h2>Search a Record </h2></th>
-</tr>
-
-<tr>
-<td> Date</td><td><input type = "date" name = "recordSearch" ></td>
-<tr></tr>
-<tr><td>Ward</td>
-    <td><select id="ward" name="ward" required>
-        <option value="">Select Ward</option>
-        <option value="Ward 1">Ward 1</option>
-        <option value="Ward 2">Ward 2</option>
-        <option value="Ward 3">Ward 3</option>
-        <option value="Ward 4">Ward 4</option>
-        <option value="Ward 5">Ward 5</option>
-        <option value="Ward 6">Ward 6</option>
-        <option value="Ward 7">Ward 7</option>
-        <option value="Ward 8">Ward 8</option>
-        <option value="Ward 9">Ward 9</option>
-        <option value="Ward 10">Ward 10</option>
-        <option value="Ward 11">Ward 11</option>
-        <option value="Ward 12">Ward 12</option>
-        <option value="Ward 13">Ward 13</option>
-        <option value="Ward 14">Ward 14</option>
- </select></td>
-<tr></tr>    
-<td> <button type = "submit">Search a record </button></td>
-
-</tr>
-<tr>
-<td> &nbsp;</td>
-</tr>
-</table>
-
-</section>
 
 
 
@@ -77,21 +39,17 @@
     <div class="card-header">
      <h2>Notices</h2>   
     </div>
-
-
-<article>
-<a href="signuptest.html">
     
 <?php
 include 'lkdbconnect.php';
 
-$sql = "SELECT * FROM notices";
+$sql = "SELECT * FROM notices ORDER BY PublishDate DESC";
 $result = $conn->query($sql);
 if($result -> num_rows > 0) {
 
 //table headers
 echo "<p><h2>All records found in the table </h2> </p>";
-echo "<centre><table>
+echo "<centre><table width = \"99%\" bgcolor = \"#e9e4e0\" border = \"1\"><tr bgcolor = \"#9ac7bf\">
 <th>Ward</th>
 <th>Title</th>
 <th>Notice</th>
@@ -116,7 +74,7 @@ $conn->close();
 
 echo "</table>";
 ?></a>
-</article>
+
 </section>
 </main>
 </div>
