@@ -34,7 +34,6 @@
 
 
 
-
 <section class="dashboard-card">
     <div class="card-header">
      <h2>Notices</h2>   
